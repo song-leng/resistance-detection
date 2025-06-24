@@ -6,7 +6,7 @@ from PIL import Image
 # モデルをロード
 @st.cache_resource
 def load_model():
-    return YOLO("C:/Users/ariga/Downloads/best_1024_E6_150epoch.pt")  # モデルパスを調整
+    return YOLO("./best_1024_E6_150epoch.pt")  # モデルパスを調整
 
 # 抵抗値マッピング
 resistance_map = {
